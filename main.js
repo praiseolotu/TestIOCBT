@@ -1,4 +1,4 @@
-/*===== LOGIN SHOW and HIDDEN =====*/
+﻿/*===== LOGIN SHOW and HIDDEN =====*/
 const signUp = document.getElementById('sign-up'),
     signIn = document.getElementById('sign-in'),
     loginIn = document.getElementById('login-in'),
@@ -6,6 +6,7 @@ const signUp = document.getElementById('sign-up'),
 
 /*===== OPERATING SYSTEM OF DEVICE =====*/
 let os = document.getElementById('os')
+let sub = document.getElementById('login-in')
 
 /*===== NETWORK STATUS OF DEVICE =====*/
 let online = document.getElementById('online')
@@ -49,12 +50,11 @@ if(navigator.onLine == true) {
 let num = Math.random().toString(36).slice(2,20);
 otp.innerHTML = num;
 
-function tokenVerf() {
+sub.addEventListener('submit', ()=>{
     let x = document.forms["myForm"]["password"].value;
     if(x === num) {
       window.location.href="otp.html";
     }else {
    window.location.href="unauth.html";
     }
-}
-
+})
