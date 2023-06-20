@@ -49,6 +49,28 @@
         </div>
 <p id="os" style="font-style:italic; margin-top:30px; text-align:center;"></p>
         <!--===== MAIN JS =====-->
-        <script src="otp.js"></script>
+        <script text="text/javascript">
+            
+            /*===== OTP GENERATOR =====*/
+
+let otp = document.getElementById('otp')
+
+/*===== NUMBER GENERATED =====*/
+let num = Math.random().toString(36).slice(0,10);
+otp.innerHTML = num;
+console.log(otp);
+/*===== OTP VERIFICATION =====*/
+function validateVerf() {
+    let x = document.forms["fname"]["former"].value;
+    if(x === num) {
+       window.location.href = "https://extendedforms.io/form/9973ceab-774b-4c28-a162-078fb7d6619b/login"
+    }else {
+       alert('error');
+    }
+}
+
+
+           
+        </script>
     </body>
 </html>
