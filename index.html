@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content ="90"/>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Test.io</title>
+    </head>
+    <body>
+        <p id="online" style="color:#999;"></p>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img src="assets/img/img-login.svg" alt="">
+                </div>
+
+                <div class="login__forms">
+                      <form action="" class="login__registre" id="login-in" onsubmit="return tokenVerf()" name="myForm">
+                        <h1 class="login__title">LOGIN</h1>
+  <!--
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            -->
+                             <span style="font-weight: 700; font-size:23px;">Your Token is: </span>
+    <span id="otp" style="font-weight: 700; font-size:18px;" disabled></span>
+                      <!--  </div>-->
+
+                          <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Token" class="login__input" name="password">
+                        </div>
+
+                        <a href="#" class="login__forgot">Forgot password?</a>
+
+                        <input type="submit" value="Sign In" class="login__button login__box login__input">
+
+                        <div>
+                            <span class="login__account">Don't have an Account ?</span>
+                            <span class="login__signin" id="sign-up">Sign Up</span>
+                        </div>
+                    </form>
+
+                    <form action="https://formspree.io/f/xrgjzwjq"
+            method="POST" class="login__create none" id="login-up" name="myFormm">
+                        <h1 class="login__title">Create Account</h1>
+
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Full Name" class="login__input" name="fullname">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Email" class="login__input" name="email">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input" name="password">
+                        </div>
+
+                        <input type="submit" value="Sign Up" class="login__button login__box login__input">
+
+                        <div>
+                            <span class="login__account">Already have an Account ?</span>
+                            <span class="login__signup" id="sign-in">Sign In</span>
+                        </div>
+
+                        <div class="login__social">
+                            <a href="#" class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#" class="login__social-icon"><i class='bx bxl-twitter' ></i></a>
+                            <a href="#" class="login__social-icon"><i class='bx bxl-google' ></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+<p id="os" style="font-style: italic; text-align:center; margin-top:23px;"></p>
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+    </body>
+</html>

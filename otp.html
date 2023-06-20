@@ -1,0 +1,54 @@
+    ﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Test.io</title>
+    </head>
+    <body>
+        <p id="online" style= "font-style: italic; text-align: center; color:#999;"></p>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img src="assets/img/img-login.svg" alt="">
+                </div>
+
+                <div class="login__forms">
+                    <form action="" class="login__registre" id="login-in" name="fname" onsubmit="return validateVerf()" required>
+                        <h1 class="login__title">Verification</h1>
+<!--  
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Username" class="login__input">
+                        </div>
+-->
+<div>
+    <span style="font-weight: 700; font-size:23px;">Your OTP is: </span>
+    <span id="otp" style="font-weight: 700; font-size:18px;" disabled></span>                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="OTP" class="login__input" id="otp-verify" name="former">
+                       </div>
+
+                        <a class="login__forgot">Forgot password?</a>
+
+                        <input type="submit" value="Verify" class="login__button login__box login__input" />
+
+                        
+                    </form>
+
+                    
+                </div>
+            </div>
+        </div>
+<p id="os" style="font-style:italic; margin-top:30px; text-align:center;"></p>
+        <!--===== MAIN JS =====-->
+        <script src="otp.js"></script>
+    </body>
+</html>
